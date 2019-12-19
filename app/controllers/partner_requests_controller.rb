@@ -1,0 +1,2 @@
+class PartnerRequestsController < ApplicationController
+end
