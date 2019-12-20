@@ -5,6 +5,15 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def create
+    # puts params
+
+    @user = User.create(
+      username: params[:username], 
+      # password: params[:password],
+      zipcode: params[:zipcode]
+    )
+
+    render json: @user
   end
 
   def show
